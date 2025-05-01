@@ -7,37 +7,37 @@ const portfolioItems = [
     id: 1,
     image: '/images/portfolio-1.jpeg',
     alt: 'Portfolio Image 1',
-    text: 'A GENTE LEVA'
+    text: 'A gente leva MAIS CLIENTES até você!'
   },
   {
     id: 2,
     image: '/images/portfolio-2.jpeg',
     alt: 'Portfolio Image 2',
-    text: 'SE NÃO ENCANTAR'
+    text: 'Aqui sua marca tem TUDO que precisa para estar em Voga!'
   },
   {
     id: 3,
     image: '/images/portfolio-3.jpeg',
     alt: 'Portfolio Image 3',
-    text: 'AQUI SUA MARCA TEM'
+    text: 'Associe sua marca a EXPERIÊNCIAS!'
   },
   {
     id: 4,
     image: '/images/portfolio-4.jpeg',
     alt: 'Portfolio Image 4',
-    text: 'seu marketing promocional!'
+    text: 'Se não encantar não vende!'
   },
   {
     id: 5,
     image: '/images/portfolio-5.jpeg',
     alt: 'Portfolio Image 5',
-    text: 'ASSOCIE SUA MARCA'
+    text: 'A energia que impulsiona seu marketing promocional!'
   },
   {
     id: 6,
     image: '/images/portfolio-6.jpg',
     alt: 'Portfolio Image 6',
-    text: 'ENDOMARKETING'
+    text: 'ENDOMARKETING para manter a geração Z nas empresas.'
   }
 ];
 
