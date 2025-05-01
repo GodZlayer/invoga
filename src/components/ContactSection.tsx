@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from './ui/button';
 import { Instagram } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section id="contato" className="bg-invoga-blue text-white py-20 px-4">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
@@ -15,7 +25,6 @@ const ContactSection: React.FC = () => {
           <h3 className="text-white font-gadies text-2xl md:text-3xl font-normal mb-4 text-center">Venha saber como e ser inVoga!</h3>
           <div className="w-full max-w-md mx-auto">
             {/* Elfsight Instagram Feed | Untitled Instagram Feed */}
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
             <div className="elfsight-app-733cb70a-af4f-4919-9311-4360a3fc7261" data-elfsight-app-lazy></div>
           </div>
         </div>
