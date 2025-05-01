@@ -17,9 +17,9 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto relative z-10 flex flex-row flex-wrap items-center justify-between w-full">
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-4">
           <img
-            src="/images/monocroma-tica-branca-png-AMqn9GXyz5c4nGan.png"
+            src="/images/logo-branca.png"
             alt="InVoga Marketing Promocional Logo"
-            className={`mx-auto mb-6 h-[5.77rem] md:h-[12.48rem] lg:h-[15.6rem] ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+            className={`mx-auto mb-6 h-[5.77rem] md:h-[12.48rem] lg:h-[15.6rem] w-auto object-contain ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
           />
           <h1 className="text-2xl md:text-3xl lg:text-2xl font-bold mb-6 uppercase tracking-wide">TRANSFORMANDO A COMUNICAÇÃO DE FORMA CRIATIVA</h1>
           <p className="text-base md:text-lg mb-10 max-w-md mx-auto">

@@ -20,7 +20,16 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "public",
-    emptyOutDir: true, // Agora apaga arquivos antigos em public antes do build
+    outDir: "public", // Gera arquivos de build apenas em public/assets
+    emptyOutDir: true, // Limpa apenas a pasta assets
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
+      output: {
+        // Mantém o index.html na raiz de public
+        // Os assets vão para public/assets
+      },
+    },
   },
 }));

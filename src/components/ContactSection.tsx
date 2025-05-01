@@ -5,7 +5,7 @@ import { Instagram } from 'lucide-react';
 const ContactSection: React.FC = () => {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.src = '/platform.js';
     script.async = true;
     document.body.appendChild(script);
     return () => {

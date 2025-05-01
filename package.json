@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "cp -r src/fonts public/fonts && cp -r src/js public/js && cp -r src/images public/images && vite build && cp -r src/fonts public/fonts && cp -r src/js public/js && cp -r src/images public/images",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
